@@ -15,6 +15,9 @@ primary_region = "lhr"
   min_machines_running = 0
   processes = ["app"]
 
+[processes]
+  app = "node dist/index.js"
+
 [[vm]]
   cpu_kind = "shared"
   cpus = 1

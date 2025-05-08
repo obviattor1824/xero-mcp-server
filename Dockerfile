@@ -14,8 +14,8 @@ COPY . .
 # Build the application
 RUN npm run build
 
-# Expose the port
-EXPOSE 8080
+# Make the entry point executable
+RUN chmod +x dist/index.js
 
-# Start the application
-CMD ["npm", "start"] 
+# Set the entry point
+ENTRYPOINT ["node", "dist/index.js"] 
