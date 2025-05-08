@@ -19,17 +19,22 @@
     "prepare": "npm run build",
     "watch": "tsc --watch",
     "lint:fix": "eslint --fix",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "start": "node dist/index.js"
   },
   "dependencies": {
     "@modelcontextprotocol/sdk": "^1.6.0",
+    "body-parser": "^2.2.0",
     "dotenv": "^16.4.7",
+    "express": "^5.1.0",
     "openid-client": "^6.3.4",
     "xero-node": "^10.0.0",
     "zod": "^3.24.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.22.0",
+    "@types/body-parser": "^1.19.5",
+    "@types/express": "^5.0.1",
     "@types/node": "^22.13.10",
     "eslint": "^9.22.0",
     "eslint-config-prettier": "^10.1.1",
